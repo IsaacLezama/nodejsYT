@@ -1,0 +1,20 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "This is the work of my learning from youtube chanel bitfumes",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaacLezama/nodejsYT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsaacLezama/nodejsYT/issues"
+  },
+  "homepage": "https://github.com/IsaacLezama/nodejsYT#readme"
+}
