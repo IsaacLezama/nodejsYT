@@ -1,13 +1,15 @@
-// const http = require('http');
+const http = require('http');
 
-// const server = http.createServer((req, res) => {
-//     res.writeHead(200, { 'Content-Type': 'application/json' });
-//     res.end(JSON.stringify({
-//     data: 'Hello World!'
-//   }));
-// });
+const PORT = 3000;
 
-// server.listen(3000);
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+    data: 'Hello World!'
+  }));
+});
+
+server.listen(PORT);
 
 // const { area, circumference } = require('./circle');
 // const Circle = require('./circle');
@@ -19,4 +21,4 @@
 
 // console.log(__dirname);
 
-console.log(__filename);
+// console.log(__filename);

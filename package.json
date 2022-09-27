@@ -4,7 +4,7 @@
   "description": "This is the work of my learning from youtube chanel bitfumes",
   "main": "app.js",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/IsaacLezama/nodejsYT/issues"
   },
-  "homepage": "https://github.com/IsaacLezama/nodejsYT#readme"
+  "homepage": "https://github.com/IsaacLezama/nodejsYT#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
