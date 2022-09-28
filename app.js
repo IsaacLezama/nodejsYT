@@ -20,6 +20,14 @@ const server = http.createServer((req, res) => {
           res.write(data);
           res.end();
         });
+    } else if(req.url === "/create-file") {
+      const textFile = "<h1>This is test file!</h1>";
+      fs.appendFile("temp/test.html", textFile , (err) => {
+        // console.log(data);
+          if(err) throw err;
+          res.write('files is created');
+          res.end();
+        }); 
     } else {
       fs.readFile("page/404.html", "utf8", (err, data) => {
         // console.log(data);
