@@ -1,6 +1,19 @@
 const http = require('http');
 const fs = require('fs');
 
+const func1 = () => console.log("func1");
+const func2 = () => console.log("func2");
+const func3 = () => {
+  console.log("func3");
+  setTimeout(func1,0);
+  new Promise((resolve, reject) => {
+    resolve("I am a promise!");
+  }).then((res) => console.log(res));
+  func2();
+};
+
+func3();
+
 const PORT = 3000;
 
 const server = http.createServer((req, res) => {
