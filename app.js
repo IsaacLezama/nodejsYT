@@ -5,6 +5,9 @@ const func1 = () => console.log("func1");
 const func2 = () => console.log("func2");
 const func3 = () => {
   console.log("func3");
+  process.nextTick(()=>{
+    console.log("I am next tick");
+  });
   setTimeout(func1,0);
   new Promise((resolve, reject) => {
     resolve("I am a promise!");
@@ -13,6 +16,8 @@ const func3 = () => {
 };
 
 func3();
+
+//priority task in event loop: mini tasks, micro tasks, macro tasks
 
 const PORT = 3000;
 
