@@ -5,7 +5,9 @@ const path = require("path");
 
 router.get('/', (req, res) => {
     // myEvent.emit("test-event", {name: `Isaac`});
-    res.sendFile( path.join(__dirname, '/../page/home.html'), {name: 'Isaac'});
+    // res.sendFile( path.join(__dirname, '/../page/home.html'), {name: 'Isaac'});
+    // res.render( path.join(__dirname, '/../page/home'), {name: 'Isaac'});
+    res.render("index", {name: 'Isaac'});
 });
 
 router.use('/book', myBookRouter);
