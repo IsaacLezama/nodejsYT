@@ -10,10 +10,11 @@ const express = require('express');
 const app = express();
 const PORT = 3001;
 
-app.get('/', (req, res) => {
-    // myEvent.emit("test-event", {name: `Isaac`});
-    res.send('Hello world');
-});
+const routes = require('./routes/index');
+
+app.use(routes);
+
+
 
 app.listen(PORT, () => {
     console.log(`Server is running at ${PORT}`);
